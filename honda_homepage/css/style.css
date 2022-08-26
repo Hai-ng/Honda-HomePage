@@ -1,0 +1,871 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Oswald', sans-serif; */
+    box-sizing: border-box;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    /* height: 50px; */
+    /* z-index: 2; */
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header .conta {
+    /* max-width: 1480px;    */
+    /* position: fixed; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0 auto;
+}
+
+.header .menu{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    
+}
+
+.header .menu i{
+    font-size: 28px;
+}
+
+.header .menu span{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -10px;
+}
+
+.header .menu:hover span, .header .about span:hover,
+.header .about i:hover{
+    color: gray;
+}
+
+.header .logo{
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+
+}
+.header .logo img{
+    width: 160px;
+    
+}
+.header .about {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.header .about span{
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.alert-bar .conta{
+    margin-left: 0;
+    height: 80px;
+    margin-top: 60px;
+    position: relative;
+    cursor: pointer;
+   
+    /* background-color: red; */
+}
+
+.alert-bar .myrow .col1 {
+    background: transparent;
+    height: 80px;
+    float: left;
+    width: 25%;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    /* transform: rotate(5deg); */
+    /* border-top: 100px solid #ff9600;
+    border-left: 0 solid transparent;
+    border-right: 50px solid transparent; */
+}
+
+.alert-bar .myrow .bg-color {
+    background: #ff9600;
+    width: 25%;
+    height: 500px;
+    float: left;
+    position: absolute;
+    left: -70px;
+    top: -70px;
+    transform: rotate(18deg);
+}
+
+.alert-bar .myrow .col1 p{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.alert-bar .myrow .col i{
+    margin-left: 50px;
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.alert-bar .myrow .col2{
+    /* background: #0d6efd; */
+    height: 80px;
+    /* position: relative; */
+    float: left; 
+    /* width: 200%; */
+    display: flex;
+    align-items: center;
+}
+
+.alert-bar .myrow .col2 p{
+    margin: 0 0 0 450px;
+    font-size: 14px ;
+    font-weight: 500;
+}
+
+
+
+.carousel .carousel-inner img{
+    height: 600px;
+}
+
+.carousel .carousel-indicators button{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+/* .carousel .carousel-control-next,
+.carousel .carousel-control-prev{
+    background-color: rgba(0,0,0,.2);
+} */
+
+.brand .list{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.brand .list .item{
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    /* transform: scale(1,1); */
+    /* transition: all 0.5s; */
+}
+.brand .list img{
+    width: 70%;
+    margin: 15% auto 10px auto;
+    display: block;
+}
+
+.brand .list .logo{
+    height: calc(100vw / 6);
+    /* height: 100%; */
+    filter: contrast(70%);
+    cursor: pointer;
+}
+
+.brand .list .logo:hover{
+    filter: none;
+}
+
+.brand .list .item:hover{
+    background-size: 110%;
+    /* transform: scale(1.5,1.5); */
+}
+
+.brand .list .item-15:hover{
+    background-size: 160%;
+}
+
+.brand .list .logo-1{
+background-color: #007CC2;
+}
+
+.brand .list .logo-2, .brand .list .logo-5,
+.brand .list .logo-6, .brand .list .logo-8{
+    background-color: #cc0001;
+}
+
+.brand .list .logo-4{
+    background-color: #000;
+}
+
+.brand .list .logo-7{
+    background-color: rgb(243, 237, 237);
+}
+
+.brand .list .item-10{
+    background-image: url(../img/hinh10.webp);
+    grid-row: 1/span 2;
+    grid-column: 2/span 2;
+}
+
+.brand .list .item-11{
+    background-image: url(../img/hinh11.jpg);
+}
+
+.brand .list .item-14{
+    background-image: url(../img/hinh14.jpg);
+}
+
+.brand .list .item-15{
+    background-image: url(../img/hinh15.jpg);
+    grid-column: 5/span 2;
+}
+
+.brand .list .item-8{
+    background-image: url(../img/hinh8.webp);
+    grid-column: 4/span 2;
+
+}
+
+.brand .list .item-12{
+    background-image: url(../img/hinh12.jpg);
+    grid-column: 3/span 2;
+}
+
+.brand .list .item-9{
+    background-image: url(../img/hinh9.jpg);
+    grid-column: 5/span 2;
+}
+
+.brand .list .item-13{
+    background-image: url(../img/hinh13.webp);
+    grid-column: 3/span 2;
+}
+
+.brand .logo p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    width: 135px;
+    margin: 5px auto 10px auto;
+    text-align: center;
+}
+
+.brand .logo span{
+    color: #ffffff;
+    font-size: 14px;
+    display: block;
+    font-weight: 700;
+    width: 25px;
+    margin: 0 auto;
+    border-bottom: 2px solid #ffffff;
+}
+
+.brand .logo-3 p, .brand .logo-7 p{
+    color: #000;
+}
+
+.brand .logo-3 span, .brand .logo-7 span{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.company .title h1{
+    text-align: center;
+    font-family: AvenirNext-Bold;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    /* line-height: 1.1; */
+    margin: 30px 0;
+}
+
+.company .main .myrow{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ; 
+    
+}
+
+.company .main .mycol{
+    width: calc(100% / 2); 
+    height: 500px ;
+    cursor: pointer;
+}
+
+.company .mycol .item{
+    color: #ffffff;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.company .mycol .item-1{
+    background-image: url(../img/hinh20.jpg);
+}
+
+.company .mycol .item-2{
+    background-image: url(../img/hinh19.jpg);
+}
+
+.company .mycol .item-3{
+    background-image: url(../img/hinh18.jpg);
+}
+
+.company .mycol .item-4{
+    background-image: url(../img/hinh21.jpg);
+}
+
+.company .mycol .item h1{
+    font-size: 26px;
+    font-weight: 700;
+    position: absolute;
+    /* căn giữa */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.company .mycol .item p{
+    font-size: 16px;
+    /* giảm khoảng cách dòng */
+    line-height: 20px;
+    width: 60%;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.company .mycol .item span{
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* .dream {
+    
+} */
+
+.dream .content{
+    cursor: pointer;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/hinh17.jpg);
+    height: 700px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.dream .mytitle {
+    width: 600px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* margin-top: 100px; */
+}
+
+.dream .mytitle h1{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.dream .mytitle p{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.dream .mytitle span{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.story .title h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 35px 0;
+    margin: 0;
+}
+
+.story .myrow {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.story .content .mycol {
+    width: 30%;
+    height: 500px;
+    /* background-color: #cc0001; */
+}
+
+.story .mycol .myitem {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.story .myitem .img{
+    width: 100%;
+    height: 227px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.story .myitem .img-1{ 
+    background-image: url(../img/hinh16.jpg);
+}
+
+.story .myitem .img-2{
+    background-image: url(../img/podcast-logo.webp);
+}
+
+.story .myitem .img-3{
+    background-image: url(../img/hinh7.webp);
+}
+
+.story .myitem .img-4 {
+    background-image: url(../img/hinh6.jpg);
+}
+
+.story .myitem .img-5 {
+    background-image: url(../img/hinh4.jpg);
+}
+
+.story .myitem .img-4, .story .myitem .img-5{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+.story .myitem .img:hover,
+.story .myitem .img-4:hover,
+.story .myitem .img-5:hover{
+    background-size: 110%;
+}
+
+.story .mycol .myitem .myinfo::before{
+    content: "";
+    border-top: 25px solid transparent ;
+    border-bottom: 25px solid white ;
+    border-left: 25px solid transparent ; 
+    border-right: 25px solid transparent ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+   
+}
+
+.story .mycol .myinfo {
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.story .mycol .myinfo h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.story .mycol .myinfo p{
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.story .mycol .myinfo span{
+    font-size: 15px;
+    font-weight: 700;
+    color: #337AB7;
+    cursor: pointer;
+}
+
+.story .mycol .myinfo span:hover{
+    color: #0e5089;
+}
+
+.story .myitem .myicon{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.story .myitem .myicon i{
+    color: white;
+    font-size: 30px ;
+}
+
+.story .col-info {
+    background: #f2f2f2;
+}
+.story .mycol .iconT {
+    text-align: right;
+    padding: 15px 15px;
+    color: rgb(29, 155, 240);;
+    margin-bottom: 30px;
+}
+
+.story .col-info .honda-title{
+    display: flex;
+    align-items: center;
+}
+
+.story .col-info .honda-title .logo{
+    width: 45px;
+    height: 45px;
+    background-color: #000;
+    border-radius: 5px;
+    display: block;
+}
+
+.story .honda-title .logo img{
+    width: 100%;
+}
+
+.story .honda-title .logo{
+    margin: 0 30px;
+}
+
+/* .story .honda-title .honda-text{
+    margin-left: 10px;
+} */
+
+.story .honda-title .honda-text h1{
+    color: #337AB7;
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.story .honda-title .honda-text a{
+    color: #337AB7;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.story .honda-text h1:hover,
+.story .honda-text a:hover{
+    color: #0e5089;
+}
+
+.story .honda-content {
+    margin: 20px 30px 10px 30px;
+}
+
+.story .honda-content p{
+    display: block;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 0;
+}
+
+.story .honda-content a{
+    font-size: 24px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #0d6efd;
+    display: block;
+    
+}
+
+.story .honda-content span{
+    color: #337AB7;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.story .honda-content a:hover,
+.story .honda-content span:hover {
+    color: #0e5089;
+}
+
+
+.story .honda-action .reply,
+.story .honda-action .retweet-1,
+.story .honda-action .retweet-2{
+    float: left;
+    width: 15%;
+    color: #8f8f8f;
+    font-size: 14px;
+}
+
+.story .honda-action .reply{
+    padding-left: 30px;
+}
+
+.story .honda-action .retweet-1 a,
+.story .honda-action .retweet-2 a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #8f8f8f;
+    /* position: relative; */
+    /* bottom: 1px; */
+}
+
+.footer {
+    background: rgb(242, 242, 242);
+}
+
+.footer .list-group-item {
+    background: rgb(242, 242, 242)
+
+}
+
+.footer .links {
+    margin-top: 50px;
+    /* background: #333333; */
+    display: flex;
+}
+
+.footer .links .brands,
+.footer .links .about,
+.footer .links .racing{
+    /* height: 500px; */
+    width: calc(100% / 3);
+    /* border: 1px solid red; */
+}
+
+.footer h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #8f8f8f;
+    margin: 0;
+}
+
+.footer .list-group .list-group-item{
+    border: none;
+    font-size: 13px;
+}
+
+.footer .list-group-item p{
+    cursor: pointer;
+}
+
+.footer .list-group-item a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+.footer .list-group-item a:hover{
+    color: #8f8f8f;
+}
+
+.footer .social-icon {
+    text-align: center;
+}
+
+.footer .social-icon img{
+    padding-top: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.footer .social-icon img:hover{
+    opacity: 0.8;
+}
+
+.footer .copyright{
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer .copyright span{
+    display: block;
+    padding: 20px 0;
+}
+
+.footer .copyright a {
+    padding: 0 10px;
+    color: #337AB7;
+}
+
+.footer .copyright a:hover{
+    color: #000000;
+}
+
+.footer .copyright p{
+    padding-top: 20px;
+}
+
+
+.footer .contact {
+    /* margin-bottom: 50px; */
+    height: 50px;
+    text-align: center;
+    background: rgb(242, 242, 242);
+}
+
+.footer .contact a{
+    color: #337AB7;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer .contact a:hover{
+    color: #0e5089;
+}
+
+/* khi reponsive, đặt điều kiện lớn hơn ở trên */
+
+
+/* for laptop nhỏ or tablet lớn */
+@media screen and (max-width: 1200px){
+    
+}
+
+/* for ipad, surface */
+@media screen and (max-width: 992px) {
+    .alert-bar .myrow .col i{
+        margin-left: 0;
+    }
+
+    .story .content .mycol{
+        width: 50%;
+    }
+
+    .story .honda-content {
+        margin: 0;
+    }
+
+}
+
+/* for phone nằm ngang */
+@media screen and (max-width: 768px){
+
+    .company .main .mycol{
+        width: 100% ;
+        height: 500px ;
+        cursor: pointer;
+    }
+    .brand .list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .brand .list .logo{
+        /* height: calc(100vw / 6); */
+        /* height: 100%; */
+        width: 100%;
+        height: 500px;
+        filter: contrast(70%);
+        cursor: pointer;
+    }
+
+    .brand .list .item{
+        /* height: 100%; */
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        cursor: pointer;
+        /* transform: scale(1,1); */
+        /* transition: all 0.5s; */
+    }
+
+    .story .content .mycol{
+        width: 50%;
+    }
+
+    .story .honda-content {
+        margin: 0;
+    }
+
+    
+}
+
+
+/* for phone */
+@media screen and (max-width: 576px) {
+    /* thêm css để phù hợp với mobile */
+
+    .alert-bar {
+        visibility: hidden;
+    }
+
+    .company .main .mycol{
+        width: 100% ;
+        height: 500px ;
+        cursor: pointer;
+    }
+
+
+    .brand .list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .brand .list .logo{
+        /* height: calc(100vw / 6); */
+        /* height: 100%; */
+        width: 100%;
+        height: 500px;
+        filter: contrast(70%);
+        cursor: pointer;
+    }
+
+    .brand .list .item{
+        /* height: 100%; */
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        cursor: pointer;
+        /* transform: scale(1,1); */
+        /* transition: all 0.5s; */
+    }
+
+    .story .content .mycol{
+        width: 50%;
+    }
+
+    .story .honda-content {
+        margin: 0;
+    }
+
+}
+
